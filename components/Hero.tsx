@@ -37,12 +37,11 @@ export function Hero() {
             className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-xl font-medium"
           >
             <p className="mb-6">
-              I'm Kamyar, a Full-Stack Web Developer based in{" "}
+              I'm Kamyar, AI Specialist based in{" "}
               <span className="rounded-md bg-yellow-100 px-1.5 py-0.5 font-medium text-gray-900">
                 Turin, Italy
               </span>
-              , focused on building fast, reliable, and scalable web
-              applications...
+              , focused on AI products and scalab web applications...
             </p>
             <p>
               I work with startups, small businesses, and SaaS founders to

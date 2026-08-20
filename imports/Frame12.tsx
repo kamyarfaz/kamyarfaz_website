@@ -21,6 +21,7 @@ function Frame() {
       </p>
       <p className="relative shrink-0">Blog</p>
       <p className="relative shrink-0">Contact Me</p>
+      <p className="relative shrink-0">Education</p>
     </div>
   );
 }
@@ -2540,6 +2541,17 @@ function ContactMe() {
   );
 }
 
+function EducationMe() {
+  return (
+    <div
+      className="-translate-x-1/2 absolute bg-[#f3f3f3] bottom-0 content-stretch flex flex-col items-center justify-center left-1/2 px-[80px] py-[48px] w-[1440px]"
+      data-name="Education me"
+    >
+      <Container6 />
+    </div>
+  );
+}
+
 export default function Frame4() {
   return (
     <div className="bg-[#f3f3f3] relative size-full">
@@ -2555,6 +2567,7 @@ export default function Frame4() {
       <Frame11 />
       <Frame12 />
       <Frame13 />
+      <EducationMe/>
       <ContactMe />
     </div>
   );
