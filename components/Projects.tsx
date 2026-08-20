@@ -18,7 +18,7 @@ const PROJECTS = [
       "Restaurant owners and staff can manage menus, update items instantly, monitor ingredient quantities, control bills of materials, and track orders in real time across departments. With its structured dashboard, team-based task organization, and operational insights, Miznex reduces manual errors, improves service speed, and gives businesses full visibility over their daily operations — from supplier intake to final order delivery.",
     images: [
       {
-        src: "/miznexDesktop.png",
+        src: "/miznex-bg-2.png",
         className: "w-[90%] md:w-[600px] z-10 rounded-xl shadow-2xl",
       },
       {
