@@ -1,4 +1,6 @@
-"use client"
+// src/app/page.tsx
+
+"use client";
 
 import { Contact } from "@/components/Contact";
 import Education from "@/components/Education";
@@ -6,6 +8,8 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { TechnicalExpertise } from "@/components/TechnicalExpertise";
+import { Publications } from "@/components/Publications";
+import { Certifications } from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -15,14 +19,11 @@ export default function Home() {
         <Hero />
         <TechnicalExpertise />
         <Projects />
-        <Education/>
+        <Education />
+        <Publications />
+        <Certifications />
         <Contact />
       </main>
-
-      {/* Footer copyright if needed, otherwise part of Contact */}
-      <footer className="w-full py-8 text-center text-sm text-gray-400">
-        <p>© 2026 Kamyar Fazlolahnezhad. All rights reserved.</p>
-      </footer>
     </div>
   );
 }

@@ -21,7 +21,7 @@ export function Header() {
         <nav className="hidden md:flex gap-12 text-sm font-medium text-[#111]">
           <button onClick={() => scrollToSection('expertise')} className="hover:text-gray-600 transition-colors">Skills</button>
           <button onClick={() => scrollToSection('projects')} className="hover:text-gray-600 transition-colors">Projects</button>
-          <button onClick={() => scrollToSection('blog')} className="hover:text-gray-600 transition-colors">Blog</button>
+          <button onClick={() => scrollToSection('Certifications')} className="hover:text-gray-600 transition-colors">Certifications</button>
           <button onClick={() => scrollToSection('education')} className="hover:text-gray-600 transition-colors">Education</button>
           <button onClick={() => scrollToSection('contact')} className="hover:text-gray-600 transition-colors">Contact Me</button>
         </nav>
