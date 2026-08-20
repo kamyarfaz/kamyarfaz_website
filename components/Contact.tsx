@@ -9,7 +9,9 @@ import {
   Linkedin,
   ArrowUpRight,
   MapPin,
-  Sparkles,
+  Send,
+  Instagram,
+  Twitter,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -160,30 +162,60 @@ export function Contact() {
           </div>
 
           {/* Bottom Socials & Copyright Bar */}
-          <div className="pt-8 mt-10 border-t border-[#eee] flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="pt-8 mt-10 border-t border-[#eee] flex flex-col lg:flex-row items-center justify-between gap-4">
             <p className="text-xs text-[#777] font-medium">
               © 2026 Kamyar Fazlolahnezhad. All rights reserved.
             </p>
 
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-2">
               <a
                 href="https://github.com/kamyarfaz"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
+                className="flex items-center gap-2 px-3.5 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
               </a>
 
               <a
-                href="http://www.linkedin.com/in/kamyarfaz"
+                href="https://www.linkedin.com/in/kamyarfaz"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
+                className="flex items-center gap-2 px-3.5 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
               >
-                <Linkedin className="w-4 h-4 text-blue-600" />
+                <Linkedin className="w-4 h-4 text-[#0077b5]" />
                 <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://t.me/kamyarfaz"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-3.5 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
+              >
+                <Send className="w-4 h-4 text-[#229ED9]" />
+                <span>Telegram</span>
+              </a>
+
+              <a
+                href="https://instagram.com/kamyarfaz"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-3.5 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
+              >
+                <Instagram className="w-4 h-4 text-[#E4405F]" />
+                <span>Instagram</span>
+              </a>
+
+              <a
+                href="https://x.com/kamyarfaz"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-3.5 py-2 bg-[#f8f8f8] hover:bg-[#ececec] text-[#202020] rounded-xl text-xs font-semibold border border-[#e0e0e0] transition-colors"
+              >
+                <Twitter className="w-4 h-4 text-[#000000]" />
+                <span>X</span>
               </a>
             </div>
           </div>
