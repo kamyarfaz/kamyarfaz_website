@@ -17,6 +17,19 @@ const TECH_STACK = [
   { name: 'Linux', icon: 'https://cdn.simpleicons.org/linux/4B5563' },
   { name: 'Jest', icon: 'https://cdn.simpleicons.org/jest/4B5563' },
   { name: 'Git', icon: 'https://cdn.simpleicons.org/git/4B5563' },
+
+  { name: 'Artificial Intelligence', icon: '/AI.svg' },
+  { name: 'Data Science', icon: 'https://cdn.simpleicons.org/pandas/4B5563' },
+  { name: 'Machine Learning', icon: '/machine-learning.svg' },
+  { name: 'Deep Learning', icon: '/deep-learning.svg' },
+  { name: 'Natural Language Processing', icon: '/Natural-Language-Processing.svg' },
+  { name: 'Signal Processing', icon: '/signal.svg' },
+  { name: 'Bioinformatics', icon: '/bioinformatics.svg' },
+
+  { name: 'Product Management', icon: '/product-management.svg' },
+  { name: 'Product Strategy', icon: '/strategy.svg' },
+  { name: 'Business Analysis', icon: '/analysis.svg' },
+  { name: 'Agile & Scrum', icon: '/sync.svg' },
 ];
 
 export function TechnicalExpertise() {
@@ -46,7 +59,7 @@ export function TechnicalExpertise() {
                  className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-80 group-hover:opacity-100"
                />
             </div>
-            <span className="text-sm font-medium text-[#4b5563] group-hover:text-[#202020] transition-colors">{tech.name}</span>
+            <span className="text-sm font-medium whitespace-nowrap text-[#4b5563] group-hover:text-[#202020] transition-colors">{tech.name}</span>
           </motion.div>
         ))}
       </div>
