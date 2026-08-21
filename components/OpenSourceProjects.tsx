@@ -108,9 +108,10 @@ const OpenSourceProjects = () => {
         transition={{ duration: 0.6 }}
         className="mb-16 max-w-4xl"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#202020]">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#202020]">
           Open Source Projects
         </h2>
+        <div className="w-12 h-1 bg-[#202020] mt-5 rounded-full mb-6" />
         <p className="text-xl md:text-2xl text-[#404040] leading-relaxed">
           Research and machine-learning projects I've built and shared publicly,
           spanning NLP, signal processing, and applied deep learning.
@@ -124,7 +125,7 @@ const OpenSourceProjects = () => {
             items.push(project);
             groups.set(project.year, items);
             return groups;
-          }, new Map<string, OpenSourceProject[]>()),
+          }, new Map<string, OpenSourceProject[]>())
         ).map(([year, items]) => (
           <div key={year} className="relative">
             <YearMarker year={year} />

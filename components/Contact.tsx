@@ -35,7 +35,7 @@ export function Contact() {
       className="w-full bg-[#f3f3f3] py-16 md:py-24 px-4 md:px-12"
       id="contact"
     >
-      <div className="max-w-[1440px] mx-auto">
+      <div className="mx-auto">
         {/* Main Light Container Card */}
         <div className="relative overflow-hidden bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-16 border border-[#e5e5e5] shadow-sm">
           {/* Top Status & Badge */}
@@ -55,7 +55,7 @@ export function Contact() {
           </div>
 
           {/* Heading & Intro */}
-          <div className="my-10 max-w-3xl">
+          <div className="my-10 ">
             <span className="text-xs font-bold uppercase tracking-wider text-neutral-400 block mb-2">
               Get In Touch
             </span>
