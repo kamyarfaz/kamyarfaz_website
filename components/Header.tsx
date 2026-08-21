@@ -8,7 +8,6 @@ const navItems = [
   { label: "Skills", id: "expertise" },
   { label: "Projects", id: "projects" },
   { label: "Open Source", id: "openSourceProjects" },
-  { label: "Blog", id: "blog" },
   { label: "Certifications", id: "Certifications" },
   { label: "Education", id: "education" },
 ];
@@ -56,7 +55,7 @@ export function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-2xl font-black tracking-tighter text-[#202020] hover:opacity-80 transition-opacity cursor-pointer relative bottom-1"
         >
-          Kamy<span className="text-neutral-400">.</span>
+          KamyarFaz<span className="text-neutral-400">.</span>
         </button>
 
         {/* Desktop Navigation (Visible ONLY on >= 1024px) */}

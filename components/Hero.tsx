@@ -18,7 +18,7 @@ export function Hero() {
       {/* Main Content */}
       <div className="w-full lg:pl-32 flex flex-col lg:flex-row gap-12 lg:gap-0 mt-12 lg:mt-32 relative z-10">
         {/* Left Column: Text */}
-        <div className="flex-1 flex flex-col justify-center items-start z-20 max-w-2xl">
+        <div className="flex-1 flex flex-col justify-center items-start z-20 lg:max-w-2xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,11 +34,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-xl font-medium"
+            className="text-lg md:text-xl text-[#404040] leading-relaxed lg:max-w-xl font-medium"
           >
             <p className="mb-6">
               I'm Kamyar, AI Specialist based in{" "}
-              <span className="rounded-md bg-yellow-100 px-1.5 py-0.5 font-medium text-gray-900">
+              <span className="rounded-md bg-gray-300 px-1.5 py-0.5 font-medium text-gray-900">
                 Turin, Italy
               </span>
               , focused on AI products and scalab web applications...
@@ -55,7 +55,7 @@ export function Hero() {
         </div>
 
         {/* Right Column: Image & Stats */}
-        <div className="flex-1 relative flex justify-end items-end lg:items-center min-h-[500px]">
+        <div className="flex-1 relative flex justify-center lg:justify-end items-center min-h-[500px]">
           {/* Stats Overlay */}
           {/* <motion.div 
             initial={{ opacity: 0, x: 20 }}
@@ -74,7 +74,7 @@ export function Hero() {
           </motion.div> */}
 
           {/* Hero Image */}
-          <div className="relative w-full max-w-[650px] aspect-[650/636]">
+          <div className="relative w-full max-w-[650px] aspect-[650/636] ">
             <ImageWithFallback
               src="/kamyar.png"
               alt="Kamyar Fazlolahnezhad"
