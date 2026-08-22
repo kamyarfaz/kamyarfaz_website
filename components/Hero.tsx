@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="relative w-full max-w-[1440px] mx-auto min-h-screen px-4 md:px-8 pt-32 lg:pt-0 flex flex-col lg:flex-row items-center justify-between overflow-hidden">
       {/* Rotated Text Sidebar (Desktop Only) */}
-      <div className="hidden lg:flex flex-col items-center absolute left-10 top-1/2 -translate-y-1/2 h-[600px] justify-between z-10 w-[20px]">
+      {/* <div className="hidden lg:flex flex-col items-center absolute left-10 top-1/2 -translate-y-1/2 h-[600px] justify-between z-10 w-[20px]">
         <div className="-rotate-90 origin-center whitespace-nowrap text-[#a1a4aa] font-medium text-sm tracking-wide transform translate-y-24">
           Full stack Developer
         </div>
@@ -13,7 +13,7 @@ export function Hero() {
         <div className="-rotate-90 origin-center text-[#a1a4aa] font-medium text-sm tracking-wide transform -translate-y-8">
           2026
         </div>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="w-full lg:pl-32 flex flex-col lg:flex-row gap-12 lg:gap-0 mt-12 lg:mt-32 relative z-10">
