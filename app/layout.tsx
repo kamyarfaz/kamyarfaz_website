@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Kamyar Fazlolahnezhad",
   description: "Kamyar Fazlolahnezhad Website",
   verification: {
-    google: "rSalIYKZ8AierTsv39lEGoa6X3Pf60iaexuk8bPmd24",
+    google: "U68NLPZzKhmrH3AhZX64RBOKchZCNojog",
   },
 };
 
