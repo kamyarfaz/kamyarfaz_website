@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,10 +20,7 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "Kamyar Fazlolahnezhad",
-  description: "Kamyar Fazlolahnezhad Website",
-  verification: {
-    google: "U68NLPZzKhmrH3AhZX64RBOKchZCNojog",
-  },
+  description: "Kamyar Fazlolahnezhad Website"
 };
 
 export default function RootLayout({
@@ -32,27 +28,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // آیدی گوگل آنالیتیکس شما
-  const GA_TRACKING_ID = "G-ZXJMXQ9JBB";
 
   return (
     <html lang="en">
-      <head>
-        {/* اسکریپت اصلی Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
-        />
-        {/* کانفیگ Google Analytics */}
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `}
-        </Script>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased bg-background`}
       >
