@@ -1,7 +1,59 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
+export const metadata: Metadata = {
+  metadataBase: new URL("https://kamyarfaz.com"),
+
+  title: "Kamyar Fazlolahnezhad | AI & Data Science Specialist",
+
+  description:
+    "Kamyar Fazlolahnezhad is an AI and Data Science Specialist focused on artificial intelligence, machine learning, data-driven applications, and modern web technologies.",
+
+  keywords: [
+    "Kamyar Fazlolahnezhad",
+    "Kamyar Fazlolahnezhad AI",
+    "Kamyar Fazlolahnezhad Data Science",
+    "AI Specialist",
+    "Artificial Intelligence Specialist",
+    "Data Science",
+    "Data Scientist",
+    "Machine Learning",
+    "AI Developer",
+    "Machine Learning Engineer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+  ],
+
+  authors: [
+    {
+      name: "Kamyar Fazlolahnezhad",
+      url: "https://kamyarfaz.com",
+    },
+  ],
+
+  creator: "Kamyar Fazlolahnezhad",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Kamyar Fazlolahnezhad | AI & Data Science Specialist",
+    description:
+      "AI and Data Science Specialist focused on artificial intelligence, machine learning, data-driven applications, and modern web technologies.",
+    url: "https://kamyarfaz.com",
+    siteName: "Kamyar Fazlolahnezhad",
+    type: "website",
+    locale: "en_US",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,43 +71,13 @@ const bebasNeue = Bebas_Neue({
   weight: "400",
 });
 
-export const metadata: Metadata = {
-  title: "Kamyar Fazlolahnezhad",
-  description: "Kamyar Fazlolahnezhad Website",
-  icons: {
-    icon: "/logo.png",
-  },
-  verification: {
-    google: "U68NLPZzKhmrH3AhZX64RBOKchZCNojog",
-  },
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // آیدی گوگل آنالیتیکس شما
-  const GA_TRACKING_ID = "G-ZXJMXQ9JBB";
-
   return (
     <html lang="en">
-      <head>
-        {/* اسکریپت اصلی Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
-        />
-        {/* کانفیگ Google Analytics */}
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `}
-        </Script>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased bg-background`}
       >
