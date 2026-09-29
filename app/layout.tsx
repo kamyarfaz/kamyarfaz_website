@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://kamyarfaz.com"),
 
-  title: "Kamyar Fazlolahnezhad | Full Stack Developer",
+  title: "Kamyar Fazlolahnezhad | AI & Data Science Specialist",
 
   description:
-    "Kamyar Fazlolahnezhad is a Full Stack Developer specializing in modern web development, React, Next.js, TypeScript, and scalable web applications.",
+    "Kamyar Fazlolahnezhad is an AI and Data Science Specialist focused on artificial intelligence, machine learning, data-driven applications, and modern web technologies.",
 
   keywords: [
     "Kamyar Fazlolahnezhad",
+    "Kamyar Fazlolahnezhad AI",
+    "Kamyar Fazlolahnezhad Data Science",
+    "AI Specialist",
+    "Artificial Intelligence Specialist",
+    "Data Science",
+    "Data Scientist",
+    "Machine Learning",
+    "AI Developer",
+    "Machine Learning Engineer",
     "Full Stack Developer",
-    "Full Stack Web Developer",
-    "Next.js Developer",
     "React Developer",
+    "Next.js Developer",
     "TypeScript Developer",
-    "Web Developer",
-    "Software Developer",
   ],
 
   authors: [
@@ -35,9 +40,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Kamyar Fazlolahnezhad | Full Stack Developer",
+    title: "Kamyar Fazlolahnezhad | AI & Data Science Specialist",
     description:
-      "Full Stack Developer specializing in React, Next.js, TypeScript, and modern web applications.",
+      "AI and Data Science Specialist focused on artificial intelligence, machine learning, data-driven applications, and modern web technologies.",
     url: "https://kamyarfaz.com",
     siteName: "Kamyar Fazlolahnezhad",
     type: "website",
@@ -66,14 +71,11 @@ const bebasNeue = Bebas_Neue({
   weight: "400",
 });
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body
