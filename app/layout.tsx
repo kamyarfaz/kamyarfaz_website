@@ -22,6 +22,9 @@ const bebasNeue = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Kamyar Fazlolahnezhad",
   description: "Kamyar Fazlolahnezhad Website",
+  icons: {
+    icon: "/logo.png",
+  },
   verification: {
     google: "U68NLPZzKhmrH3AhZX64RBOKchZCNojog",
   },
