@@ -6,6 +6,10 @@ export const metadata: Metadata = {
 
   title: "Kamyar Fazlolahnezhad | AI & Data Science Specialist",
 
+  icons: {
+    icon: "/logo.png",
+  },
+  
   description:
     "Kamyar Fazlolahnezhad is an AI and Data Science Specialist focused on artificial intelligence, machine learning, data-driven applications, and modern web technologies.",
 
