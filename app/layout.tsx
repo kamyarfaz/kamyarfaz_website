@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://kamyarfaz.com"),
 
@@ -24,7 +25,6 @@ export const metadata: Metadata = {
     "Machine Learning",
     "AI Developer",
     "Machine Learning Engineer",
-    "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
     "TypeScript Developer",
