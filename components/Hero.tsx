@@ -41,7 +41,7 @@ export function Hero() {
               <span className="rounded-md bg-gray-300 px-1.5 py-0.5 font-medium text-gray-900">
                 Turin, Italy
               </span>
-              , focused on AI products and scalab web applications...
+              , focused on AI products and scalable web applications...
             </p>
             <p>
               I work with startups, small businesses, and SaaS founders to
